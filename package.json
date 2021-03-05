@@ -1,0 +1,42 @@
+{
+  "name": "@lonr/browser-logo-spinner",
+  "version": "1.0.0",
+  "description": "browser logos as spinners",
+  "main": "dist/index.js",
+  "repository": "git@github.com:lonr/browser-spinner.git",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "webpack",
+    "start:dev": "webpack serve",
+    "format": "prettier --write \"./**/*.{ts,js,json,md}\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages --source-branch main"
+  },
+  "files": [
+    "/dist/*"
+  ],
+  "author": "lonr <lonr@live.cn>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-knobs": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/cli": "^6.1.21",
+    "@storybook/html": "^6.1.21",
+    "@storybook/storybook-deployer": "^2.8.7",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.2.0",
+    "prettier": "^2.2.1",
+    "raw-loader": "^4.0.2",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.2.2",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {}
+}
